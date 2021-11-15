@@ -37,18 +37,18 @@ function createcard([img,mainid,moviename,ticketprice,review,id,bill])
    products.innerHTML +=newcard;
    
 }
-let movie1=["/images/movie1.jpg","m1","Joker","150","⭐⭐⭐⭐","t1","bill1()"];
-let movie2=["/images/movie2.jpg","m2","Lion King","150","⭐⭐⭐⭐⭐","t2","bill2()"];
-let movie3=["/images/movie3.jpg","m3","Avengers","120","⭐⭐⭐⭐","t3","bill3()"];
-let movie4=["/images/movie4.jpg","m4","Venom","170","⭐⭐⭐","t4","bill4()"];
-let movie5=["/images/movie5.jpg","m5","Bahubali","200","⭐⭐⭐⭐⭐","t5","bill5()"];
-let movie6=["/images/movie6.jpg","m6","Saaho","150","⭐⭐⭐","t6","bill6()"];
-let movie7=["/images/movie7.jpg","m7","RRR","200","⭐⭐⭐⭐","t7","bill7()"];
-let movie8=["/images/movie8.jpg","m8","Kabir singh","180","⭐⭐⭐⭐","t8","bill8()"];
-let movie9=["/images/movie9.jpg","m9","padhmavath","150","⭐⭐⭐⭐","t9","bill9()"];
-let movie10=["/images/movie10.jpg","m10","TENET","170","⭐⭐⭐","t10","bill10()"];
-let movie11=["/images/movie11.jpg","m11","Radheshyam","200","⭐⭐⭐⭐⭐","t11","bill11()"];
-let movie12=["/images/movie12.jpg","m12","RED","150","⭐⭐⭐","t12","bill12()"];
+let movie1=["./images/movie1.jpg","m1","Joker","150","⭐⭐⭐⭐","t1","bill1()"];
+let movie2=["./images/movie2.jpg","m2","Lion King","150","⭐⭐⭐⭐⭐","t2","bill2()"];
+let movie3=["./images/movie3.jpg","m3","Avengers","120","⭐⭐⭐⭐","t3","bill3()"];
+let movie4=["./images/movie4.jpg","m4","Venom","170","⭐⭐⭐","t4","bill4()"];
+let movie5=["./images/movie5.jpg","m5","Bahubali","200","⭐⭐⭐⭐⭐","t5","bill5()"];
+let movie6=["./images/movie6.jpg","m6","Saaho","150","⭐⭐⭐","t6","bill6()"];
+let movie7=["./images/movie7.jpg","m7","RRR","200","⭐⭐⭐⭐","t7","bill7()"];
+let movie8=["./images/movie8.jpg","m8","Kabir singh","180","⭐⭐⭐⭐","t8","bill8()"];
+let movie9=["./images/movie9.jpg","m9","padhmavath","150","⭐⭐⭐⭐","t9","bill9()"];
+let movie10=["./images/movie10.jpg","m10","TENET","170","⭐⭐⭐","t10","bill10()"];
+let movie11=["./images/movie11.jpg","m11","Radheshyam","200","⭐⭐⭐⭐⭐","t11","bill11()"];
+let movie12=["./images/movie12.jpg","m12","RED","150","⭐⭐⭐","t12","bill12()"];
 
 
 createcard(movie1);
