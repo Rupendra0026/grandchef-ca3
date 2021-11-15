@@ -24,34 +24,34 @@ function createcard([img,drinkname,drinkprice,fun])
 }
 // started giving values to array by function for creating cards
 
-let item1=["orangejuice.jpg",
+let item1=["/images/orangejuice.jpg",
 "orange juice",
 "120",
 "changeval(bill1);"
 ];
-let item2=["lemonsoda.jpg","lemon soda","80","changeval(bill2);"];
-let item3=["granatejuice.jpg","pomegranate juice","180","changeval(bill3);"];
-let item4=["blueberry.jpg","blue berry","130","changeval(bill4);"];
-let item5=["strawberryjuice.jpg","strawberry juice","200","changeval(bill5);"];
-let item6=["mangojuice.jpg","mango juice","160","changeval(bill6);"];
-let item7=["beetrootjuice.jpg","beetroot juice","230","changeval(bill7);"];
-let item8=["watermelonjuice.jpg","watermelon juice","150","changeval(bill8);"];
-let item9=["strawberryshake.jpg","strawberry shake","350","changeval(bill9);"];
-let item10=["choclateshake.jpg","chocolate shake","280","changeval(bill10);"];
-let item11=["oreoshake.jpg","oreo shake","200","changeval(bill11);"];
-let item12=["doublechoco.jpg","doublechoco","380" ,"changeval(bill12);"];
-let item13=["multifruitshake.jpg","multifruit","360" ,"changeval(bill13);"];
-let item14=["redberryshake.jpg","redberry shake","180" ,"changeval(bill14);"];
-let item15=["kiwishake.jpg","kiwi shake","240" ,"changeval(bill15);"];
-let item16=["bananashake.jpg","banana shake","150" ,"changeval(bill16);"];
-let item17=["fruitbeer.jpg","Fruit beer","350" ,"changeval(bill17);"];
-let item18=["chilledbeer.jpg","chilled beer","250", ,"changeval(bill18);"];
-let item19=["frenchbeer.jpg","French beer","310" ,"changeval(bill19);"];
-let item20=["ijwit.jpg","IJWIT","450" ,"changeval(bill20);"];
-let item21=["redwine.jpg","red wine","600" ,"changeval(bill21);"];
-let item22=["yeringstation.jpg","Yering Station","780" ,"changeval(bill22);"];
-let item23=["pinot.jpg","pinot grigio","500" ,"changeval(bill23);"]
-let item24=["jamshed.jpg","jamshed","850" ,"changeval(bill24);"];
+let item2=["/images/lemonsoda.jpg","lemon soda","80","changeval(bill2);"];
+let item3=["/images/granatejuice.jpg","pomegranate juice","180","changeval(bill3);"];
+let item4=["/images/blueberry.jpg","blue berry","130","changeval(bill4);"];
+let item5=["/images/strawberryjuice.jpg","strawberry juice","200","changeval(bill5);"];
+let item6=["/images/mangojuice.jpg","mango juice","160","changeval(bill6);"];
+let item7=["/images/beetrootjuice.jpg","beetroot juice","230","changeval(bill7);"];
+let item8=["/images/watermelonjuice.jpg","watermelon juice","150","changeval(bill8);"];
+let item9=["/images/strawberryshake.jpg","strawberry shake","350","changeval(bill9);"];
+let item10=["/images/choclateshake.jpg","chocolate shake","280","changeval(bill10);"];
+let item11=["/images/oreoshake.jpg","oreo shake","200","changeval(bill11);"];
+let item12=["/images/doublechoco.jpg","doublechoco","380" ,"changeval(bill12);"];
+let item13=["/images/multifruitshake.jpg","multifruit","360" ,"changeval(bill13);"];
+let item14=["/images/redberryshake.jpg","redberry shake","180" ,"changeval(bill14);"];
+let item15=["/images/kiwishake.jpg","kiwi shake","240" ,"changeval(bill15);"];
+let item16=["/images/bananashake.jpg","banana shake","150" ,"changeval(bill16);"];
+let item17=["/images/fruitbeer.jpg","Fruit beer","350" ,"changeval(bill17);"];
+let item18=["/images/chilledbeer.jpg","chilled beer","250", ,"changeval(bill18);"];
+let item19=["/images/frenchbeer.jpg","French beer","310" ,"changeval(bill19);"];
+let item20=["/images/ijwit.jpg","IJWIT","450" ,"changeval(bill20);"];
+let item21=["/images/redwine.jpg","red wine","600" ,"changeval(bill21);"];
+let item22=["/images/yeringstation.jpg","Yering Station","780" ,"changeval(bill22);"];
+let item23=["/images/pinot.jpg","pinot grigio","500" ,"changeval(bill23);"]
+let item24=["/images/jamshed.jpg","jamshed","850" ,"changeval(bill24);"];
 createcard(item1);
 createcard(item2);
 createcard(item3);
