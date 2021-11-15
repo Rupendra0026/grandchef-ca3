@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC-Food Menu</title>
+    <link rel="stylesheet" href="foodmain.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="head">
+        <div class="back"> <a href="order.html"> <i class="fas fa-angle-left"></a></i></div>
+        <h1><span>S</span>pecials of <span>G</span>rand <span>C</span>hef</h1>
+        <a href="home.html"> <i class="fas fa-home" id="home"></i></a>
+        <a href="feedback.html"> <i class="fas fa-envelope" id="msg"></i></a>
+    </div>
+    <div class="header">
+        <ul class="mainul">
+            <li> <a href="#vegies"> veg items</a>
+                <!-- <ul>
+                    <li>veg friedrice</li>
+                    <li>veg biriyani</li>
+                    <li> <a href="#mush"> mushroom biriyani</a></li>
+                    <li>panner biriyani</li>
+                </ul> -->
+            </li>
+            <li>
+                <a href="#eggies"> egg items</a>
+                <ul>
+                    <li><a href="#eggfriedrice">egg friedrice</a></li>
+                    <li><a href="#mirchieggbiriyani">mirchi egg biriyani</a></li>
+                    <li><a href="#eggtandoori">egg Tandoori</a></li>
+                    <li><a href="#eggstart">egg staters</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#chicken"> chicken items</a>
+                <ul>
+                    <li><a href="#chickenfriedrice">chicken friedrice</a></li>
+                    <li><a href="#chickenbiriyani">chicken biriyani</a></li>
+                    <li><a href="#teharibiriyani">tehari biriyani</a></li>
+                    <li><a href="#handibiriyani">handi biriyani</a></li>
+                    <li><a href="#chick">Chicken staters</a></li>
+                </ul>
+            </li>
+            <li>
+
+                <a href="#mutton">mutton items</a>
+                <ul>
+                    <li><a href="#muttonfriedrice">Mutton Friedrice</a></li>
+                    <li><a href="#muttonbiriyani">mutton biriyani</a></li>
+                    <li><a href="#muttonawadhi">Mutton-Awadhi</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#splcurries"> special curries</a>
+                
+                <ul>
+                    <li>Veg curries</li>
+                    <li>Non-veg curries</li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+    <div class="vegitems" id="vegies">
+        <h1 class="title">GC-Veg Items</h1>
+    </div>
+    <!-- started here and  -->
+    <div class="popup">
+        <div class="trail">
+            <h1 class="title">select the payment method</h1>
+            <input type="radio" name="checkin" class="radioinput">debit card</input><br>
+            <input type="radio" name="checkin" class="radioinput">credit card</input><br>
+            <input type="radio" name="checkin" class="radioinput"> paytm</input><br>
+            <input type="radio" name="checkin" class="radioinput">UIP</input><br>
+            <input type="radio" name="checkin" class="radioinput">cash on delivery</input><br>
+            <div class="bill">
+                <h3 class="itemhead">item details</h3>
+                <div class="totallist">
+                    <ul>
+                        <li>itemname :"vegbiriyani</li>
+                        <li>additional charges:rs10/-</li>
+                        <!-- <li>actual price:</li> -->
+                        <li>total cost: 100/-</li>
+                    </ul>
+                </div>
+                <div class="cnfrm">
+                    <button class="done" id="access" onclick="confirm()">confirm order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ends here -->
+    <div class="itemslist">
+        <article>
+            <img src="vegfriedrice.jpg" alt="">
+            <div class="text">
+                <h2>Veg Friedrice</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val1);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="vegbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Veg biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 280&#x20B9;</li>
+                    <li>Reviews(198)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val2);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="vegnoodles.jpg" alt="">
+            <div class="text">
+                <h2>Veg Noodles</h2>
+                <ul>
+                    <li>pirce: <span>200</span> 150&#x20B9;</li>
+                    <li>Reviews(177)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val3);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="paneerbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Paneer Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 250&#x20B9;</li>
+                    <li>Reviews(151)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val4);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="mush">
+            <img src="mushroombiriyani.png" alt="">
+            <div class="text">
+                <h2>Mushroom Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>310</span> 270&#x20B9;</li>
+                    <li>Reviews(70)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val5);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="zirarice.jpg" alt="">
+            <div class="text">
+                <h2>zirarice</h2>
+                <ul>
+                    <li>pirce: <span>180</span> 120&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val6);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="cazubiryani.jpg" alt="">
+            <div class="text">
+                <h2>Cashew Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 300&#x20B9;</li>
+                    <li>Reviews(205)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val7);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="tomatobiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Tomato rice</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 250&#x20B9;</li>
+                    <li>Reviews(151)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val8);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="fullmeals.jpg" alt="">
+            <div class="text">
+                <h2>Full Meals</h2>
+                <ul>
+                    <li>pirce: <span>220</span> 180&#x20B9;</li>
+                    <li>Reviews(89)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val9);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="familymeals.jpg" alt="">
+            <div class="text">
+                <h2>Family Meals</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 320&#x20B9;</li>
+                    <li>Reviews(229)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val10);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="whiterice.jpeg" alt="">
+            <div class="text">
+                <h2>Whiterice</h2>
+                <ul>
+                    <li>pirce: <span>180</span> 120&#x20B9;</li>
+                    <li>Reviews(139)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val11);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="special friedrice.jpeg" alt="">
+            <div class="text">
+                <h2>Special Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 250&#x20B9;</li>
+                    <li>Reviews(189)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val12);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <!-- egg startssssssssssssssssssss -->
+    <div class="vegitems" id="eggies">
+        <h1>GC-Egg Items</h1>
+    </div>
+    <div class="itemslist">
+        <article id="eggfriedrice">
+            <img src="eggfriedrice.jpg" alt="">
+            <div class="text">
+                <h2>Egg Friedrice</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val13);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggbiryani.jpeg" alt="">
+            <div class="text">
+                <h2>Egg biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 280&#x20B9;</li>
+                    <li>Reviews(198)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val14);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggnoodles.jpg" alt="">
+            <div class="text">
+                <h2>Egg Noodles</h2>
+                <ul>
+                    <li>pirce: <span>200</span> 150&#x20B9;</li>
+                    <li>Reviews(177)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val15);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="panneregg.jpg" alt="">
+            <div class="text">
+                <h2>Paneer Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 250&#x20B9;</li>
+                    <li>Reviews(151)-<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val16);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="mirchieggbiriyani">
+            <img src="mirchieggbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Mirchi Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>310</span> 270&#x20B9;</li>
+                    <li>Reviews(70)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val17);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="tomatoegg.jpg" alt="">
+            <div class="text">
+                <h2>Tomato Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>180</span> 150&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val18);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="cashew egg.jpg" alt="">
+            <div class="text">
+                <h2>Cashew Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>260</span> 200&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val19);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="egg burjji.jpg" alt="">
+            <div class="text">
+                <h2>Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>220</span> 180&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val20);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="eggtandoori">
+            <img src="egg tandoori.jpg" alt="">
+            <div class="text">
+                <h2>Egg Tandoori</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 210&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val21);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="specialegg.jpg" alt="">
+            <div class="text">
+                <h2>special Egg Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 240&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val22);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggdumbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Egg Dum Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>320</span> 280&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val23);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="specialegg friedrice.jpg" alt="">
+            <div class="text">
+                <h2>Special Egg Friedrice</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(124)-<i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val24);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <!--egg starterssssssssssssssssssss  -->
+    <div class="vegitems" id="eggstart">
+        <h1>GC-Egg staters</h1>
+    </div>
+    <div class="itemslist">
+        <article>
+            <img src="eggstart1.jpg" alt="">
+            <div class="text">
+                <h2>egg-bread</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 120&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val25);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggmayonnaise.jpg" alt="">
+            <div class="text">
+                <h2>Mayonnaise</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val26);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="stuffedeggs.jpg" alt="">
+            <div class="text">
+                <h2>Stuffed-eggs</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 180&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val27);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="spicyegg.jpg" alt="">
+            <div class="text">
+                <h2>spicy hard eggs</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 230&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <butto onclick="popuptoggle();changeval(val28);" n>Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggtoast.jpg" alt="">
+            <div class="text">
+                <h2>egg-Toast</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 260&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val29);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggomlet.cms" alt="">
+            <div class="text">
+                <h2>egg-Omelette</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 160&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val30);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggkabab.jpg" alt="">
+            <div class="text">
+                <h2>egg-Kabab</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 170&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val31);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="toastgrilledpeper.jpg" alt="">
+            <div class="text">
+                <h2>Toast-Grilled Peper</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 270&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val32);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggpatties.png" alt="">
+            <div class="text">
+                <h2>egg-Patties</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val33);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="cheesyegg.jpg" alt="">
+            <div class="text">
+                <h2>cheesy-Egg</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 250&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val34);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggsalad.jpg" alt="">
+            <div class="text">
+                <h2>egg-Salad</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 220&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val35);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="specialeggstuff.jpg" alt="">
+            <div class="text">
+                <h2>Special Egg Stuff</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 190&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val36);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="Asparagus.jpg" alt="">
+            <div class="text">
+                <h2>Asparagus-Egg</h2>
+                <ul>
+                    <li>pirce: <span>290</span> 250&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val37);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="scrambedegg.jpg" alt="">
+            <div class="text">
+                <h2>egg-Scrambled</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 210&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val38);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="spanishomelette.jpg" alt="">
+            <div class="text">
+                <h2>spanish Omelette</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 270&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val39);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggrolls.jpg" alt="">
+            <div class="text">
+                <h2>Egg-Rolls</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val40);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <!-- chicken tym starts -->
+    <div class="vegitems" id="chicken">
+        <h1>GC-Chicken Items</h1>
+    </div>
+    <div class="itemslist">
+        <article id="chickenfriedrice">
+            <img src="chickenfriedrice.jpg" alt="">
+            <div class="text">
+                <h2>Chicken-Friedrice</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val41);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="eggchicken.jpg" alt="">
+            <div class="text">
+                <h2>Egg-chicken</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 250&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val42);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="boneless-chicken.jpg" alt="">
+            <div class="text">
+                <h2>Boneless-chicken</h2>
+                <ul>
+                    <li>pirce: <span>310</span> 270&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val43);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="masala chiken biriyani.jpg" alt="">
+            <div class="text">
+                <h2>Masala-Chicken rice</h2>
+                <ul>
+                    <li>pirce: <span>310</span> 280&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val44);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="chickenbiriyani">
+            <img src="chickenbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Chicken-Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 210&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val45);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="splfriedchicken.jpg" alt="">
+            <div class="text">
+                <h2>Spl-friedlegs</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 280&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val46);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="dumbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Chicken-Dum</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 250&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val47);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="hydbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>HYD-Spl Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>390</span> 300&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val48);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="teharibiriyani">
+            <img src="teharibiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Tehari Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 310&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val49);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="calicut biriyani.jpg" alt="">
+            <div class="text">
+                <h2>Calicut Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 340&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val50);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="bamboo.jpg" alt="">
+            <div class="text">
+                <h2>Bamboo Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>280</span> 250&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val51);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="kozhikodanbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>kozhikodan Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 280&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val52);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="handibiriyani">
+            <img src="handibiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Handi Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 310&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val53);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="quinoa Biriyani.jpg" alt="">
+            <div class="text">
+                <h2>Quinoa Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val54);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="koftebiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Kofte Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 260&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val55);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="spllegpiece.jpg" alt="">
+            <div class="text">
+                <h2>SPL-Legpiece</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 240&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val56);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <!-- chicken staterssssssssssssssss -->
+    <div class="vegitems" id="chick">
+        <h1>GC-Chicken Staters</h1>
+    </div>
+    <div class="itemslist">
+        <article>
+            <img src="chickenlolipop.jpeg" alt="">
+            <div class="text">
+                <h2>Chicken-Lolipop</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 230&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val57);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="deepfried.jpg" alt="">
+            <div class="text">
+                <h2>Deepfried-piece</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 180&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val58);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="chickenkabab.jpg" alt="">
+            <div class="text">
+                <h2>Chicken-Kabab</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 240&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val59);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="chicken65.jpg" alt="">
+            <div class="text">
+                <h2>SPL-Chicken65</h2>
+                <ul>
+                    <li>pirce: <span>320</span> 280&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val60);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="mexicanlime.jpg" alt="">
+            <div class="text">
+                <h2>Mexican Lime</h2>
+                <ul>
+                    <li>pirce: <span>330</span> 300&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val61);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="cilantro.jpg" alt="">
+            <div class="text">
+                <h2>Cilantro</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 220&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val62);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="splwings.jpg" alt="">
+            <div class="text">
+                <h2>SPL-Wings</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 290&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val63);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="hongkong.jpg" alt="">
+            <div class="text">
+                <h2>HongKong-chicken</h2>
+                <ul>
+                    <li>pirce: <span>250</span> 200&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val64);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="chillichicken.jpg" alt="">
+            <div class="text">
+                <h2>Chilli-Chicken</h2>
+                <ul>
+                    <li>pirce: <span>300</span> 280&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val65);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="grilled.jpg" alt="">
+            <div class="text">
+                <h2>Grilled-Chicken</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 320&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val66);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="butterchicken.jpg" alt="">
+            <div class="text">
+                <h2>Butter-Chicken</h2>
+                <ul>
+                    <li>pirce: <span>380</span> 350&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val67);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="tandoori.jpg" alt="">
+            <div class="text">
+                <h2>Tandoori</h2>
+                <ul>
+                    <li>pirce: <span>330</span> 310&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val68);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <!-- mutton tymmmm startttsssssssss -->
+    <div class="vegitems" id="mutton">
+        <h1>GC-Mutton Items</h1>
+    </div>
+    <div class="itemslist">
+        <article id="muttonfriedrice">
+            <img src="muttonfriedrice.jpg" alt="">
+            <div class="text">
+                <h2>Mutton-Friedrice</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 300&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val69);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="muttonbiriyani">
+            <img src="muttonbiriyani.jpg" alt="">
+            <div class="text">
+                <h2>Mutton-Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>400</span> 360&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val70);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="muttondum.jpg.crdownload" alt="">
+            <div class="text">
+                <h2>Mutton-Dumbiriyani</h2>
+                <ul>
+                    <li>pirce: <span>450</span> 400&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val71);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="amburmutton.jpg" alt="">
+            <div class="text">
+                <h2>Mutton-Ambur Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>400</span> 340&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val72);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article id="muttonawadhi">
+            <img src="awadhi.jpg" alt="">
+            <div class="text">
+                <h2>Mutton-Awadhi </h2>
+                <ul>
+                    <li>pirce: <span>350</span> 300&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val73);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="muttongoli.jpg" alt="">
+            <div class="text">
+                <h2>Mutton-GoliBiriyani</h2>
+                <ul>
+                    <li>pirce: <span>350</span> 320&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val74);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="hydmutton.jpg" alt="">
+            <div class="text">
+                <h2>HYD-Mutton Biriyani</h2>
+                <ul>
+                    <li>pirce: <span>400</span> 390&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val75);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+        <article>
+            <img src="splfamilypack.jpg" alt="">
+            <div class="text">
+                <h2>Biriyani-Familypack</h2>
+                <ul>
+                    <li>pirce: <span>500</span> 480&#x20B9;</li>
+                    <li>Reviews(231)-</i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></li>
+                </ul>
+                <button onclick="popuptoggle();changeval(val76);">Order<i class="fas fa-baby-carriage"
+                        id="carry"></i></button>
+            </div>
+        </article>
+    </div>
+    <hr>
+    <!-- footerr -->
+    <footer id=footdown>
+        <div class="foot">
+            <div class="aboutus">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, dolores maxime doloribus nulla repellendus esse magni,
+                    quis enim perspiciatis blanditiis ipsam facere, laborum nobis error sequi
+                    iure omnis fugiat alias atque hic laboriosam quis.</p>
+                <a href="home.html"><i class="fas fa-angle-up"> back to homepage</i></a>
+            </div>
+
+            <div class="links">
+                <h2>Links</h2>
+                <ul>
+                    <a href="">
+                        <li>about</li>
+                    </a>
+                    <a href="">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="">
+                        <li>Privacy</li>
+                    </a>
+                    <a href="">
+                        <li>Help</li>
+                    </a>
+                    <a href="">
+                        <li>Terms and conditions</li>
+                    </a>
+                    <a href="">
+                        <li>contact us</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="services">
+                <h2>Services</h2>
+                <ul>
+                    <li>Food</li>
+                    <li>Softdrinks and alochol</li>
+                    <li>Hotel rooms</li>
+                    <li>Mini-screen theater</li>
+                    <li>Vehicles for rent</li>
+                </ul>
+            </div>
+            <div class="contactus">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><i class="fas fa-address-book">contact number:3516498465</i></li>
+                    <a href="mailto:rupendravnvss@gmail.com">
+                        <li><i class="fas fa-envelope"></i>gmail: rupendravnvss@gmail.com</li>
+                    </a>
+                    <a href="">
+                        <li><b> Help</b></li>
+                    </a>
+                    <div class="fonts">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>&copy copyright Grand Chef</h4>
+        </div>
+    </footer>
+    <script src="foodmain.js"></script>
+</body>
+
+</html>
+
+<!-- script -->
+<!-- <script>
+        function popuptoggle(){
+        let a=document.querySelector(".popup");
+        a.classList.toggle('active');
+        let b=document.querySelector("#billitem");
+    }
+    </script> -->

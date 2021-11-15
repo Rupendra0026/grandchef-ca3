@@ -1,0 +1,146 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.5s;
+    /* background: url(outlook.jpeg); */
+    background-image: linear-gradient( #2190be,white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container
+{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+.bluebg
+{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(235, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.bluebg .box
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.bluebg .formbx
+{
+    position: absolute;
+    /* top: 0px; */
+    left: 0;
+    height: 500px;
+    width: 50%;
+    background: whitesmoke;
+    box-shadow: 50px, 25px, 30px black;
+    z-index: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    background-image: linear-gradient(red,white);
+    border-radius: 30px;
+    
+}
+
+.formbx.active
+{
+    left: 50%;
+    background-color: green;
+
+}
+.formbx.active .signinform
+{
+    left: -100%;
+    
+}
+.formbx .signupform
+{
+    right: 100%;
+    display: none;
+   
+}
+.formbx.active .signupform
+{
+    display: flex;
+    background-image: linear-gradient(green,white);
+}
+.formbx .form
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 80px;
+    transition: 0.5s;
+   
+}
+.formbx .form form
+{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.formbx .form h1
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 300px;
+}
+.formbx .form input,button
+{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    margin-bottom: 20px;
+}
+.formbx  input
+{
+    
+    border: rgb(63, 62, 62,0.3) ;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-radius: 5px;
+    padding: 15px 0px 5px 2px;
+}
+.formbx .signinform , .signupform button a
+{
+    text-decoration: none;
+}
+body button
+{
+  
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 5px 2px 5px;
+    margin-left: 40px;
+}
+body input
+{
+    width: 100%;
+}

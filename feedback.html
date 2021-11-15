@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>GVC-Feedback</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        color: skyblue;
+        text-transform: capitalize;
+        }
+        h1
+        {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .container
+        {
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            margin-left: 0px;
+            /* margin-top: 50px; */
+            max-height: 100vh;
+            border-radius: 10px;
+        }
+        .container input
+        {
+            width: 300px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            /* margin-top: 0px; */
+        }
+        p
+        {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        textarea
+        {
+            width: 450px;
+            margin-left: 10px;
+            margin-top: 10px;
+            max-width: 450px;
+            max-height: 300px;
+        }
+        .container button
+        {
+        text-align: center;
+        margin-left: 210px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        }
+        .fa-home{
+            /* float: right; */
+            font-size: 1.5em;
+           background-color: skyblue;
+           color: white;
+            margin-left: 450px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="home.html"> <i class="fas fa-home" id="home"></i></a>
+        <h1>Feedback</h1>
+    <p>Name: <input type="text"></p>
+    <p>Mobile number: <input type="text"></p>
+    <p>Feedback: <br><textarea name="" id="" cols="30" rows="10"></textarea></p><br>
+    <button type="submit" onclick="submit()">submit</button>
+    </div>
+    <script>
+        function submit()
+        {
+            alert("thanks for your feedback")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,620 @@
+*
+{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(109, 236, 209) */
+    /* background-color:rgb(153, 219, 245,0.8); */
+    background-image: linear-gradient( to right,#2190be,white);
+    
+    border-radius: 0 0 100px, black;  
+}
+.background
+{
+    background-image: url(main.jpeg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#log
+{
+    font-size: 50px;
+    color: white;
+}
+.head
+{
+    height: 20vh;
+    width: 100%;
+    /* background:burlywood; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    margin-bottom: 0px;
+    /* background-color: rgb(168, 240, 224) */
+    background-image: linear-gradient(to bottom, #2190be ,white);
+}
+.head .sign
+{
+    position: absolute;
+    display: flex;
+    margin-top: -80px;
+    margin-left: 1400px;
+    
+}
+.head a
+{
+    border-bottom: 0ch;
+    color: black;
+     padding-left: 20px;
+    text-decoration: none;
+}
+.head a:hover
+{
+    /* text-decoration: underline; */
+    font-size: 1.5em;
+
+}
+/* @keyframes anihead
+{
+    0%
+    {
+        margin-left: -50px;
+    }
+    50%
+    {
+        margin-left: -80;
+    }
+    100%
+    {
+        margin-left: 100px;
+    }
+} */
+.head span
+{
+    color: black;
+    font-size: 60px;
+    font-weight: 700;
+   
+}
+.nav ul
+{
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  text-decoration: none;  
+}
+.nav ul a
+{
+    text-decoration: none;
+}
+.nav ul a li
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 40px;
+}
+
+/* about home */
+.home
+{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(109, 236, 209); */
+    min-height: 70vh;
+    margin-top: 50px;
+}
+.left0 img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.home .homepara
+{
+    font-weight: 400px;
+    margin: 60px;
+    max-width: 800px;
+    color: black;
+
+    
+}
+.home .homepara h1
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* hover of grand chef main out look by flip image */
+.home .left0
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    position: relative;
+}
+.home img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.home .left0 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.home .left0:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home kitchen starts */
+.homefood
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: white;
+}
+.homefood img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homefood .right
+{
+    width: 700px;
+    margin: 60px;
+}
+/* hover of homefood flip image */
+.homefood .left
+{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 30px;
+}
+.homefood img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homefood .left img:nth-child(2)
+{
+    transform: rotateY(180deg);
+} 
+.homefood .left:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home drinks */
+.homedrinks
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    min-height: 80px;
+}
+.homedrinks img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;   
+}
+.homedrinks .right1
+{
+    width: 700px;
+    margin: 60px;
+}
+/* hover of homedrinks flip image */
+.homedrinks .left1
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homedrinks  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homedrinks .left1 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homedrinks .left1:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home juices */
+.homejuices
+{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.homejuices img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;   
+}
+.homejuices .left2
+{
+    width: 700px;
+    margin: 60px;
+}/* hover of homejuices flip image */
+.homejuices .right2
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homejuices  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homejuices .right2 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homejuices .right2:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home starters */
+.homestater
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.homestater img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;  
+}
+.homestater .right3
+{
+    width: 700px;
+    margin: 60px;
+}
+/* hover of homestater flip image */
+.homestater .left3
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homestater  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homestater .left3 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homestater .left3:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home pizza burgers */
+.homepizza
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    min-height: 80vh;
+}
+.homepizza img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px; 
+}
+.homepizza .left4
+{
+    width: 700px;
+    margin: 60px;
+}
+/* hover of homepizza flip image */
+.homepizza .right4
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homepizza  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homepizza .right4 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homepizza .right4:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home infrastructure */
+.homeview
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.homeview img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;  
+}
+.homeview .right5
+{
+   
+    width: 700px;
+    margin: 60px;
+}
+/* hover of homeview flip image */
+.homeview .left5
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homeview  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homeview .left5 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homeview .left5:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+
+/* home pool */
+.homepool
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: white;
+}
+.homepool img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px; 
+}
+.homepool .left6
+{
+    width: 700px;
+    margin: 60px; 
+}
+/* hover of homepool flip image */
+.homepool .right6
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+.homepool  img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homepool .right6 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homepool .right6:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+/* homeroom */
+.homeroom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.homeroom .left7
+{
+    width: 700px;
+    margin: 60px; 
+}
+.homeroom img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px; 
+}
+/* hover of homeroom by flip images */
+.homeroom .right7
+{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.homeroom img
+{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+.homeroom .right7 img:nth-child(2)
+{
+    transform: rotateY(180deg);
+}
+.homeroom .right7:hover img:nth-child(2)
+{
+    transform: rotateY(0deg);
+}
+
+/* footer started */
+.foot
+{
+background-color: white;
+display: flex;
+height: 300px;
+transition: 0.5s;
+/* justify-content: center;
+align-items: center; */
+
+}
+.foot .aboutus
+{
+    width: 350px;
+margin-right: 100px;
+margin-left: 50px;
+   margin-top: 30px;
+}
+.foot .aboutus a i
+{
+    margin-top: 10px;
+}
+ ul li 
+{
+    text-decoration: none;
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.foot .links
+{
+    width: 200px;
+    margin-right: 100px;
+margin-left: 50px;
+   margin-top: 30px;
+   color:black ;
+}
+.foot .links li
+{
+    margin-top: 10px ;
+}
+.foot .links li:hover
+{
+    color: grey;
+    /* background-color: skyblue; */
+    font-size: 30px;
+}
+.foot .services
+{
+    margin-right: 100px;
+    margin-left: 50px;
+       margin-top: 30px;  
+}
+.foot .services li
+{
+    margin-top: 10px ;
+}
+.foot .services li:hover
+{
+    color: grey;
+    /* background-color: skyblue; */
+    transform: rotateY(30deg);
+}
+.foot .contactus
+{
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 50px;
+       margin-top: 30px;  
+}
+.foot .contactus li
+{
+    margin-top: 10px ;
+}
+.foot .contactus .fonts
+{
+    margin-top: 10px ;
+}
+.foot .contactus .fonts .fab
+{
+    margin-right: 10px;
+}
+.foot .contactus .fonts .fab:hover
+{
+    color: grey;
+    font-size: 40px;
+}
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+

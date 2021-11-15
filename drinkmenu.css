@@ -1,0 +1,276 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: skyblue;
+    color: white;
+}
+/* adding using js styling for it */
+.productholder
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px 10px 20px;
+    /* background-color: white; */
+    /* max-width: 850px;
+    max-height: 300px; */
+    margin-top: 50px;
+    margin-left: 60px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.card{
+  background-color: white;
+  /* min-width: 300px; */
+  border-radius: 20px;
+  width: 300px;
+}
+.card:hover
+{
+    background-color: rgb(221, 210, 210);
+    cursor: pointer;
+}
+img
+{
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px ;
+}
+.cardtext
+{
+    top: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    color: skyblue;
+
+    
+}
+.category
+{
+    font-size: 3em;
+}
+.brandtext
+{
+    font-size: 1.5em;
+}
+/* head */
+a
+{
+    text-decoration: none;
+    color: skyblue;
+}
+.head
+{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+    color:skyblue;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    word-spacing: 20px;
+    
+}
+.head .back
+{
+    float: left;
+    font-size: 1.5em;
+}
+.fas
+{
+    color: skyblue;
+}
+.fa-baby-carriage
+{
+    color: white;
+}
+h1 span
+{
+    font-size: 1.5em;
+}
+#home
+{
+    /* display: flex; */
+    float: right;
+    margin-top: -50px;
+    justify-content: right;  
+}
+#msg
+{
+    float: right;
+    margin-top: -20px;
+    cursor: pointer;
+}
+/* nav bar or header styling */
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 1000px;
+    margin: 0px auto;
+    cursor: pointer;
+    
+}
+.header ul
+{
+    list-style: none;
+    margin-top: 1%;
+}
+.header ul li
+{
+    background-color: white;
+    width: 165px;
+    height: 50px;
+    border: 1px solid skyblue;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: skyblue;
+    font-size: 1.2em;
+    font-weight: 900%;
+    position: relative;
+    z-index: 10;
+    
+    
+}
+.header ul li:hover
+{
+    background-color: rgb(81, 152, 180);
+    color: white;
+    font-size: 1.5em;
+
+}
+.header ul ul
+{
+    display: none;
+}
+.header ul li:hover >ul{
+  display: list-item;
+}
+
+/* card button */
+button
+{
+    width: 100px;
+    height: 25px;
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 40px;
+    margin-top:  15px; ;
+    margin-bottom: 20px; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: skyblue;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+#carry
+{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+/* popup styling */
+.popup
+    {
+    
+        position: fixed;
+        /* position: absolute; */
+        margin-left: 430px;
+        margin-top: -200px;
+        background-color: rgb(83, 201, 216);
+        width: 800px;
+        height: 600px;
+        max-width: 800px;
+        max-height: 500px;
+        border-radius: 20px;
+        visibility: hidden;
+        z-index: 10;
+        text-transform: capitalize;
+        margin-top: 50px;
+        text-transform: capitalize;
+    }
+    .done
+{
+    /* done is the id of order button */
+    margin-left: 500px;
+    margin-bottom: 20px;
+    background-color: rgb(59, 243, 59);
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    
+}
+    .popup.active
+    {
+          visibility: visible;
+    }
+    ul li
+    {
+        list-style: none;
+    }
+    h3
+    {
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+       padding-top: 20px;
+       font-size: 1.8em;
+    }
+    .popup h1
+    {
+        text-align: center;
+        font-size: 3em;
+        color: white;
+    }
+    .popup input
+    {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    .finalbill
+    {
+        font-size: 1.5em;
+        color: white;
+    }
+    .bill
+    {
+      text-decoration: none;
+      margin-top: 10px;
+        margin-left: 50px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .bill ul li
+    {
+        margin-top: 10px;
+    }
+    .close
+    {
+        /* float: right; */
+        margin-top: 10px;
+        margin-left: 770px;
+        font-size: 1.5em;
+    }

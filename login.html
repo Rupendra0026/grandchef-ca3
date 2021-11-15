@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Chef-login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="bluebg">
+            <div class="box signin">
+                <h2>Already have a accout?!</h2><br>
+                <button class="signinbtn">signin</button>
+            </div>
+            <div class="box signup">
+                <h2>don't have a accout?!</h2><br>
+                <button class="signupbtn">signup</button>
+            </div>
+            <div class="formbx">
+                <div class="form signinform">
+                    <form action="">
+                        <h1>Signin</h1>
+                        <input type="text" class="check" placeholder="enter mail">
+                        <input type="text" placeholder="enter password"><br>
+                        <button type="submit">signin</button><br>
+                        <a href="#">Forgot password?</a>
+                    </form>
+                </div>
+                <div class="form signupform">
+                    <form>
+                        <h1>create account!!</h1>
+                        <input type="text" placeholder="enter Name">
+                        <input type="text" placeholder="enter mail address">
+                        <input type="text" placeholder="enter password">
+                        <input type="text" placeholder="enter confirm password">
+                        <input type="text" placeholder="enter mobile number">
+                        <button type="submit">signup</button><br>
+                        <button type="reset"><a href="home.html">back to home</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let signinbtn = document.querySelector('.signinbtn');
+        let signupbtn = document.querySelector('.signupbtn');
+        let formbx = document.querySelector('.formbx');
+        let signupform=document.querySelector('.signupform');
+        signupbtn.onclick = function () {
+            formbx.classList.add('active')
+        }
+        signinbtn.onclick = function () {
+            formbx.classList.remove('active')
+            
+        }
+    </script>
+</body>
+
+</html>

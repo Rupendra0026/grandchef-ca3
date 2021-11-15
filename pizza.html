@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC-Pizza</title>
+    <link rel="stylesheet" href="pizza.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="head">
+        <div class="back"> <a href="order.html"> <i class="fas fa-angle-left"></a></i></div>
+        <h1><span>S</span>pecials of <span>G</span>rand <span>C</span>hef</h1>
+        <a href="home.html"> <i class="fas fa-home" id="home"></i></a>
+        <a href="feedback.html"> <i class="fas fa-envelope" id="msg"></i></a>
+    </div>
+    <div class="header">
+        <ul>
+            <li><a href="#pizza1">Pizza</a></li>
+            <li><a href="#burger1">Burger</a></li>
+            <li><a href="#spl1">special items</a></li>
+        </ul>
+    </div>
+    <div class="popup">
+        <div class="trail">
+            <h1 class="title">select the payment method</h1>
+            <input type="radio" name="checkin" class="radioinput">debit card</input><br>
+            <input type="radio" name="checkin" class="radioinput">credit card</input><br>
+            <input type="radio" name="checkin" class="radioinput"> paytm</input><br>
+            <input type="radio" name="checkin" class="radioinput">UIP</input><br>
+            <input type="radio" name="checkin" class="radioinput">cash on delivery</input>
+            <!-- <h4>booked:${time}</h4> -->
+            <br>
+            <div class="bill">
+                <h3 class="itemhead">item details</h3>
+                <div class="totallist">
+                    <ul>
+                        <li>itemname :"vegbiriyani</li>
+                        <li>additional charges:rs10/-</li>
+                        <li>total cost: 100/-</li>
+                    </ul>
+                    
+                </div>
+                <div class="cnfrm">
+                    <button class="done" id="access">confirm order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="productholder">
+        
+    </div>
+
+<script src="pizza.js"></script>
+</body>
+</html>
