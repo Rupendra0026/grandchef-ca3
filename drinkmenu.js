@@ -24,7 +24,7 @@ function createcard([img,drinkname,drinkprice,fun])
 }
 // started giving values to array by function for creating cards
 
-let item1=["/images/orangejuice.jpg",
+let item1=["./images/orangejuice.jpg",
 "orange juice",
 "120",
 "changeval(bill1);"
