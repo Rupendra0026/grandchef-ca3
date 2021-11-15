@@ -46,7 +46,7 @@ let spl3=["./images/Choco Lava Cake.jpg","spl3","ChocoLava Cake","260","changeva
 let spl4=["./images/Cheese Shots.jpg","spl4","Cheese Shots","180","changeval(a28);"];
 let spl5=["./images/Crunchy Strips.jpg","spl5","Crunchy Strips","80","changeval(a29);"];
 let spl6=["./images/Tomato Pasta.jpg","spl6","Tomato Pasta","160","changeval(a30);"];
-let spl7=["./images/Browine.jpg","spl7","Brownie Fantasy","230","changeval(a31);"];
+let spl7=["./images/brown.jpg","spl7","Brownie Fantasy","230","changeval(a31);"];
 let spl8=["./images/cupcakes.jpg","spl8","cup cakes","100","changeval(a32);"];
 createcard(pizza1);
 createcard(pizza2);
